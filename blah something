@@ -1,4 +1,4 @@
-wl=400:1:750;
+wl=400:1:800;
 Visgra=zeros(4,length(wl));
 k=1;
 dsio2=300;
