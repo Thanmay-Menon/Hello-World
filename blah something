@@ -10,5 +10,5 @@ for wl=400:1:749
    Visgra(k,l)=100*(viss+visp)./2;
    l=l+1;
 end
-k=k+2;
+k=k+4;
 end
