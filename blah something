@@ -1,0 +1,14 @@
+wl=400:1:749;
+Visgra=zeros(4,length(wl));
+k=1;
+dsio2=285;
+for theta=[0 pi/6 pi/4 pi/3]
+    l=1;
+for wl=400:1:749
+   visp=(intenstheta0_p(wl,dsio2,theta)-intenstheta_p(wl,dsio2,theta))./(intenstheta_p(wl,dsio2,theta)+intenstheta0_p(wl,dsio2,theta));
+   viss=(intenstheta0_s(wl,dsio2,theta)-intenstheta_s(wl,dsio2,theta))./(intenstheta_s(wl,dsio2,theta)+intenstheta0_s(wl,dsio2,theta));
+   Visgra(k,l)=100*(viss+visp)./2;
+   l=l+1;
+end
+k=k+1;
+end
